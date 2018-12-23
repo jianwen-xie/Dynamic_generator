@@ -45,8 +45,9 @@ testing results will be saved in `./output/rock/test/synthesis`
 Synthesis
 <p align="center">
     <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/fire.gif" width="350px"/>
-    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/flag.gif" width="350px"/>
-    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/flame.gif" width="350px"/>
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/light.gif" width="350px"/>
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/waterfall.gif" width="350px"/>
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/frame.gif" width="350px"/>
 </p>  
 
 For any questions, please contact Jianwen Xie (jianwen@ucla.edu), Ruiqi Gao (ruiqigao@ucla.edu) and Zilong Zheng (zilongzheng0318@ucla.edu)
