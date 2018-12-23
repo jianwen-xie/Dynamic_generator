@@ -24,21 +24,20 @@ Project Page: (http://www.stat.ucla.edu/~jxie/DynamicGenerator/DynamicGenerator.
 
 (i) Training
 
-First, prepare your data into a folder, for example `./data/scene/rock` 
+First, prepare your data into a folder, for example `./trainingVideo/dynamicTexture/fire` 
   
-To train a model with ***rock*** dataset:
+To train a model with dynamic texture ***fire***:
 
-    $ python main.py --category rock --data_dir ./data/scene --output_dir ./output --net_type scene --image_size 64
+    $ python main_dyn_G.py --category fire --isTraining True
 
-The synthesized results will be saved in `./output/rock/synthesis`. 
+The training results will be saved in `./output_synthesis/fire/final_result`. 
 
-The learned models will be saved in `./output/rock/checkpoints`. 
+The learned models will be saved in `./output_synthesis/fire/model`. 
 
-If you want to calculate inception score, use --calculate_inception=True. 
 
-(ii) Testing for image synthesis  
+(ii) Testing for dynamic texture synthesis  
     
-    $ python main.py --test --test_type syn --category rock --net_type scene --image_size 64 --output_dir ./output --ckpt ./output/rock/checkpoints/model.ckpt-82000
+    $ python main_dyn_G.py --category fire --isTraining False --net_type scene --image_size 64 --output_dir ./output --ckpt ./output/rock/checkpoints/model.ckpt-82000
 
 testing results will be saved in `./output/rock/test/synthesis`
 
