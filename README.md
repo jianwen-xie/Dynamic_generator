@@ -63,9 +63,9 @@ testing results will be saved in `./output/rock/test/synthesis`
 (iii) Results
 
 <p align="center">
-    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/flag.gif" width="100px"/> 
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/flag.gif" width="200px"/> 
     <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/ocean.gif" width="200px"/>
-    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/windmill.gif" width="150px"/>
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/windmill.gif" width="200px"/>
 </p>  
 
 ### (4) For background inpainting
@@ -73,8 +73,8 @@ testing results will be saved in `./output/rock/test/synthesis`
 (iii) Results
 
 <p align="center">
-    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/boat.gif" width="350px"/> 
-    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/walking.gif" width="350px"/>   
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/boat.gif" width="200px"/> 
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/walking.gif" width="200px"/>   
 </p>  
 
 For any questions, please contact Jianwen Xie (jianwen@ucla.edu), Ruiqi Gao (ruiqigao@ucla.edu) and Zilong Zheng (zilongzheng0318@ucla.edu)
