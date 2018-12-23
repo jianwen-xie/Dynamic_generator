@@ -41,13 +41,40 @@ The learned models will be saved in `./output_synthesis/fire/model`.
 
 testing results will be saved in `./output/rock/test/synthesis`
 
-## Results
-Synthesis
+(iii) Results
+
 <p align="center">
     <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/fire.gif" width="350px"/>
     <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/light.gif" width="350px"/>
     <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/waterfall.gif" width="350px"/>
     <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/frame.gif" width="350px"/>
+</p>  
+
+### (2) For action pattern synthesis
+
+(iii) Results
+
+<p align="center">
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/animal.gif" width="350px"/>    
+</p>  
+
+### (3) For recovery
+
+(iii) Results
+
+<p align="center">
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/flag.gif" width="350px"/> 
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/ocean.gif" width="350px"/>
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/windmill.gif" width="350px"/>
+</p>  
+
+### (4) For background inpainting
+
+(iii) Results
+
+<p align="center">
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/boat.gif" width="350px"/> 
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/walking.gif" width="350px"/>   
 </p>  
 
 For any questions, please contact Jianwen Xie (jianwen@ucla.edu), Ruiqi Gao (ruiqigao@ucla.edu) and Zilong Zheng (zilongzheng0318@ucla.edu)
