@@ -55,7 +55,7 @@ testing results will be saved in `./output/rock/test/synthesis`
 (iii) Results
 
 <p align="center">
-    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/animal.gif" width="350px"/>    
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/animal.gif" width="700px"/>    
 </p>  
 
 ### (3) For recovery
@@ -63,9 +63,9 @@ testing results will be saved in `./output/rock/test/synthesis`
 (iii) Results
 
 <p align="center">
-    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/flag.gif" width="350px"/> 
-    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/ocean.gif" width="350px"/>
-    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/windmill.gif" width="350px"/>
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/flag.gif" width="100px"/> 
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/ocean.gif" width="200px"/>
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/windmill.gif" width="150px"/>
 </p>  
 
 ### (4) For background inpainting
