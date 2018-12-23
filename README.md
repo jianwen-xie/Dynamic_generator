@@ -41,4 +41,12 @@ The learned models will be saved in `./output_synthesis/fire/model`.
 
 testing results will be saved in `./output/rock/test/synthesis`
 
-  
+## Results
+Synthesis
+<p align="center">
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/fire.gif" width="350px"/>
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/flag.gif" width="350px"/>
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/flame.gif" width="350px"/>
+</p>  
+
+For any questions, please contact Jianwen Xie (jianwen@ucla.edu), Ruiqi Gao (ruiqigao@ucla.edu) and Zilong Zheng (zilongzheng0318@ucla.edu)
