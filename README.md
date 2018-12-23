@@ -63,9 +63,11 @@ testing results will be saved in `./output/rock/test/synthesis`
 (iii) Results
 
 <p align="center">
-    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/flag.gif" width="200px"/> 
-    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/ocean.gif" width="200px"/>
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/flag.gif" width="200px"/>     
     <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/windmill.gif" width="200px"/>
+    
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/ocean.gif" width="200px"/>
+    <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/playing.gif" width="200px"/>
 </p>  
 
 ### (4) For background inpainting
