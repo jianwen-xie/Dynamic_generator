@@ -66,19 +66,21 @@ To train a model with dataset ***animal30_running***:
 
     $ python main_dyn_G_motion.py --category animal30_running --isTraining True
 
-The training results will be saved in `./output_synthesis/fire/final_result`. 
+The training results will be saved in `./output_synthesis/animal30_running/final_result`. 
 
-The learned models will be saved in `./output_synthesis/fire/model`. 
+The learned models will be saved in `./output_synthesis/animal30_running/model`. 
 
 (ii) Testing
 
-$ python main_dyn_G.py --category fire --isTraining False --num_sections_in_test 4 --num_batches_in_test 2 --ckpt_name model.ckpt-2960
+    $ python main_dyn_G_motion.py --category animal30_running --isTraining False --num_sections_in_test 2 --num_batches_in_test 2 --ckpt_name model.ckpt-2960
 
 (iii) Results
 
 <p align="center">
     <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/animal.gif" width="720px"/>    
 </p>  
+
+Synthesizing animal actions (animal action dataset). The first row shows the observed videos, while the second and third rows display two corresponding synthesized videos for each obcerved video. The number of frames of the observed video is less than that of the synthesized video in the experiment of synthesizing human actions. 
 
 ### (3) For recovery
 
