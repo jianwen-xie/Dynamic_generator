@@ -5,7 +5,7 @@ from src.dynamic_generator import Dynamic_Generator
 import os
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 CONFIG = tf.app.flags.FLAGS
 
@@ -41,16 +41,18 @@ tf.flags.DEFINE_float('step_size', 0.03, 'delta')
 tf.flags.DEFINE_integer('sample_steps', 15, 'number of steps of Langevin sampling')  # 15
 
 # misc
-tf.flags.DEFINE_string('output_dir', './output_bi', 'output directory')
+tf.flags.DEFINE_string('output_dir', './output_background_inpainting', 'output directory')
 tf.flags.DEFINE_string('category', 'boats', 'name of category')
-tf.flags.DEFINE_string('data_path', './trainingVideo/background_inpainting', 'path of the training data')
+tf.flags.DEFINE_string('data_path', './trainingVideo/background_inpainting/data', 'path of the training data')
 tf.flags.DEFINE_integer('log_step', 10, 'number of steps to output synthesized image')
 tf.flags.DEFINE_string('mask_file', 'mask128.mat', 'name of the mask file [missing_frame_type.mat | region_type.mat]')
-tf.flags.DEFINE_string('mask_type', 'external', 'type of masks: [randomPeper | missingFrames | external]')
-tf.flags.DEFINE_string('mask_path', './trainingVideo/background_inpainting/boats/mask/', 'mask path')
+tf.flags.DEFINE_string('mask_type', 'external', 'type of masks: [randomRegion | missingFrames | external]')
+tf.flags.DEFINE_string('mask_path', './trainingVideo/background_inpainting/mask', 'mask path')
+
 # testing
-tf.flags.DEFINE_string('num_sections_in_test', 4, 'total number of truncations in testing')
-tf.flags.DEFINE_string('num_batches_in_test', 3, 'number of batches generated in testing')
+tf.flags.DEFINE_integer('num_sections_in_test', 4, 'total number of truncations in testing')
+tf.flags.DEFINE_integer('num_batches_in_test', 2, 'number of batches generated in testing')
+tf.flags.DEFINE_string('ckpt_name', 'model.ckpt-2960', 'name of the checkpoint')
 
 
 def main():
@@ -68,16 +70,12 @@ def main():
                 return NotImplementedError
         else:
 
-            ckpt_path = os.path.join(CONFIG.output_dir, CONFIG.category, 'model', 'model.ckpt-2990')
-            info_path = os.path.join(CONFIG.output_dir, CONFIG.category, 'model', 'content_and_state.dat')
+            ckpt_path = os.path.join(CONFIG.output_dir, CONFIG.category, 'model', CONFIG.ckpt_name)
+            appearance_path = os.path.join(CONFIG.output_dir, CONFIG.category, 'model', 'content_and_state.dat')
             motion_path = os.path.join(CONFIG.output_dir, CONFIG.category, 'model', 'motion_type_vectors.dat')
-            image_path = '/home/kenny/extend/new_project/STGConvNet-tensorflow/STGConvNet-tensorflow/trainingVideo/dynamicTexture/animal30/image/027.png'
-            model.test(ckpt_path, info_path, motion_path, image_path, is_diagnosis=True, is_random_content=True,
-                       is_random_motion_type=True, is_use_observed_content=False)
-
-         #  model.test(ckpt_path, info_path, motion_path, image_path, is_diagnosis=True, is_random_content=False,
-         #              is_random_motion_type=False, is_use_observed_content=True)
-            # model.manipulate(ckpt_path, info_path)
+            state_initial_path = os.path.join(CONFIG.output_dir, CONFIG.category, 'model', 'state_initial.dat')
+            model.test(ckpt_path, appearance_path, motion_path, state_initial_path, is_random_content=True,
+                       is_random_motion_type=True, is_random_state_initial=False)
 
 
 if __name__ == '__main__':
