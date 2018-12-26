@@ -37,9 +37,13 @@ The learned models will be saved in `./output_synthesis/fire/model`.
 
 (ii) Testing for dynamic texture synthesis  
     
-    $ python main_dyn_G.py --category fire --isTraining False --net_type scene --image_size 64 --output_dir ./output --ckpt ./output/rock/checkpoints/model.ckpt-82000
+    $ python main_dyn_G.py --category fire --isTraining False --num_sections_in_test 4 --num_batches_in_test 2 --ckpt_name model.ckpt-2960
+    
+the 'num_sections_in_test' indicates the number of trucations of the synthesized video
 
-testing results will be saved in `./output/rock/test/synthesis`
+the 'num_batches_in_test' indicates the number of independent synthesized videos
+
+testing results will be saved in `./output_synthesis/fire/final_result_testing
 
 (iii) Results
 
