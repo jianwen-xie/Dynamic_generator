@@ -84,7 +84,7 @@ Synthesizing animal actions (animal action dataset). The first row shows the obs
 
 ### (3) For recovery
 
-(i) Training
+(i) Training and recovering
 
 #### Using external mask file
 
@@ -106,7 +106,7 @@ Type 2: single region masks
 
     $ python main_dyn_G_recovery.py --category ocean --isTraining True  --training_mode incomplete --mask_type randomRegion
 
-(iii) Results
+(ii) Results
 
 <p align="center">
     <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/flag.gif" width="200px"/> &nbsp; &nbsp;
@@ -114,6 +114,8 @@ Type 2: single region masks
     <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/ocean.gif" width="200px"/> &nbsp; &nbsp;
     <img src="https://github.com/jianwen-xie/Dynamic_generator/blob/master/demo/playing.gif" width="200px"/>
 </p>  
+
+In each example, the first one is the occluded training video, and the second one is the recovered result.
 
 ### (4) For background inpainting
 
