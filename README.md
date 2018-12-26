@@ -43,7 +43,7 @@ the 'num_sections_in_test' indicates the number of trucations of the synthesized
 
 the 'num_batches_in_test' indicates the number of independent synthesized videos
 
-testing results will be saved in `./output_synthesis/fire/final_result_testing
+testing results will be saved in `./output_synthesis/fire/final_result_testing`.
 
 (iii) Results
 
