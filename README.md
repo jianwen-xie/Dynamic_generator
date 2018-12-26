@@ -72,7 +72,9 @@ The learned models will be saved in `./output_synthesis/animal30_running/model`.
 
 #### (ii) Testing
 
-    $ python main_dyn_G_motion.py --category animal30_running --isTraining False --num_sections_in_test 2 --num_batches_in_test 2 --ckpt_name model.ckpt-2960
+    $ python main_dyn_G_motion.py --category animal30_running --isTraining False --num_sections_in_test 2 --num_batches_in_test 2 --ckpt_name model.ckpt-6990
+    
+testing results will be saved in `./output_synthesis/animal30_running/final_result_testing`.
 
 #### (iii) Results
 
@@ -105,6 +107,8 @@ Type 1: missing frames
 Type 2: single region masks 
 
     $ python main_dyn_G_recovery.py --category ocean --isTraining True  --training_mode incomplete --mask_type randomRegion
+    
+The results will be saved in `./output_recovery/ocean/final_result`. 
 
 #### (ii) Results
 
@@ -122,6 +126,8 @@ In each example, the first one is the occluded training video, and the second on
 #### (i) Inpainting
 
     $ python main_dyn_G_background_inpainting.py --category boats --isTraining True  --training_mode incomplete --mask_type external --mask_file mask128.mat
+    
+The results will be saved in `./output_background_inpainting/boats/final_result`. 
 
 #### (ii) Results
 
