@@ -138,4 +138,5 @@ The results will be saved in `./output_background_inpainting/boats/final_result`
 
 In each example, the first one is the original video, the second one is the result where the target object is removed by our algorithm. (Left) removing a walking person in front of fountain. (Right) removing a moving boat in the lake.
 
+### Q & A
 For any questions, please contact Jianwen Xie (jianwen@ucla.edu), Ruiqi Gao (ruiqigao@ucla.edu) and Zilong Zheng (zilongzheng0318@ucla.edu)
