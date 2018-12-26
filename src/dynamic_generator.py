@@ -464,7 +464,7 @@ class Dynamic_Generator(object):
             mask1 = mask1[:, 0:self.num_frames, :, :, :]
             mask = mask1.astype(bool)
 
-        elif self.mask_type == 'randomPeper':
+        elif self.mask_type == 'randomRegion':
 
             mask = pepper_salt_masks(train_data, mask_ratio=0.6, mask_sz=16, mask_duration=70)
             mask = mask.astype(np.bool)
@@ -736,7 +736,7 @@ class Dynamic_Generator(object):
                 saveSampleVideo(reconstructed_data, self.result_dir, original=(train_data), global_step=epoch,
                                 scale_method='tanh')
 
-    def test(self, ckpt, info_path, state_initial_path, motion_path, is_random_content=False,
+    def test(self, ckpt, info_path,  motion_path, state_initial_path, is_random_content=False,
              is_random_motion_type=False, is_random_state_initial=False):
 
         assert ckpt is not None, 'no checkpoint provided.'
